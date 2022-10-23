@@ -13,3 +13,18 @@ C:\Users\Z6OJG\Desktop\private\testin\New folder\PublisherData\obj\Debug\net6.0\
 C:\Users\Z6OJG\Desktop\private\testin\New folder\PublisherData\obj\Debug\net6.0\refint\PublisherData.dll
 C:\Users\Z6OJG\Desktop\private\testin\New folder\PublisherData\obj\Debug\net6.0\PublisherData.pdb
 C:\Users\Z6OJG\Desktop\private\testin\New folder\PublisherData\obj\Debug\net6.0\ref\PublisherData.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherData.deps.json
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherData.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherData.pdb
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherDomain.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherDomain.pdb
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.csproj.AssemblyReference.cache
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.AssemblyInfoInputs.cache
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.AssemblyInfo.cs
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.csproj.CoreCompileInputs.cache
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.csproj.CopyComplete
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\refint\PublisherData.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.pdb
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\ref\PublisherData.dll

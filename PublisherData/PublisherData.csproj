@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\PublisherDomain\PublisherDomain.csproj" />
     <ProjectReference Include="..\PublisherDomain\PublisherDomain.csproj" />
   </ItemGroup>
 
