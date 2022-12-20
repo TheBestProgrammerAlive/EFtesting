@@ -28,3 +28,5 @@ C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\Pu
 C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\refint\PublisherData.dll
 C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.pdb
 C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\ref\PublisherData.dll
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\bin\Debug\net6.0\PublisherData.runtimeconfig.json
+C:\Users\Zordon5000\Desktop\PROJEKTS\EFtesting\PublisherData\obj\Debug\net6.0\PublisherData.genruntimeconfig.cache

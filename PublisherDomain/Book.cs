@@ -8,7 +8,7 @@ namespace PublisherDomain
 {
     public class Book
     {
-        public int BookId { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; } = default!;
         public DateTime PublishDate { get; set; }
         public decimal BasePrice { get; set; }

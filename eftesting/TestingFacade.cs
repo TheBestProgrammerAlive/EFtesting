@@ -11,7 +11,7 @@ namespace eftesting
 {
     public class TestingFacade
     {
-       public void GetAuthors()
+        public void GetAuthors()
         {
             using var context = new PubContext();
             var authors = context.Authors.ToList();
@@ -31,10 +31,13 @@ namespace eftesting
         }
         public void AddAuthorWithBook()
         {
-            var author = new Author { FirstName = "Julie", LastName = "Lerman" };
-            author.Books.Add(new Book { Title = "cośtma", PublishDate = new DateTime(2009, 1, 1) });
-            author.Books.Add(new Book { Title = "inneksienszkei", PublishDate = new DateTime(2008, 10, 1) });
-            using var context = new PubContext();
+            var namesPath = Path.Combine(Directory.GetCurrentDirectory(), "names.txt");
+            var bookNamesPath = Path.Combine(Directory.GetCurrentDirectory(), "bookNames.txt");
+
+            string[] names = File.ReadAllLines(namesPath);
+            string[] bookNames = File.ReadAllLines(bookNamesPath);
+            var author = CreateRandomAuthor(names, bookNames);
+            PubContext context = new();
             context.Authors.Add(author);
             context.SaveChanges();
 
@@ -49,7 +52,7 @@ namespace eftesting
                 Console.WriteLine($"{author.FirstName} {author.LastName}");
                 foreach (var book in author.Books)
                 {
-                    Console.WriteLine($"*{book}");
+                    // Console.WriteLine($"*{book.Author}  {book.AuthorId}  {book.PublishDate}  {book.BasePrice}");
                 }
             }
 
@@ -57,11 +60,14 @@ namespace eftesting
 
         public void SeedDb()
         {
-            string[] names = File.ReadAllLines(@"C:\Users\Z6OJG\Desktop\private\testin\New folder\eftesting\names.txt");
-            string[] bookNames = File.ReadAllLines(@"C:\Users\Z6OJG\Desktop\private\testin\New folder\eftesting\bookNames.txt");
+            var namesPath = Path.Combine(Directory.GetCurrentDirectory(), "names.txt");
+            var bookNamesPath = Path.Combine(Directory.GetCurrentDirectory(), "bookNames.txt");
+
+            string[] names = File.ReadAllLines(namesPath);
+            string[] bookNames = File.ReadAllLines(bookNamesPath);
             using var context = new PubContext();
-            int i = 0;
-            while (i < 1000)
+            int i = 1;
+            while (i < 15)
             {
                 var author = CreateRandomAuthor(names, bookNames);
                 context.Add(author);
@@ -75,7 +81,7 @@ namespace eftesting
             Random rng = new();
             List<Book> books = new();
 
-            for (int i = 0; i < rng.Next(5); i++)
+            for (int i = 1; i < rng.Next(5); i++)
             {
                 DateTime start = new DateTime(1995, 1, 1);
                 int range = (DateTime.Today - start).Days;

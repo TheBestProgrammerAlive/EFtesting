@@ -1,16 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 using eftesting;
-using Microsoft.EntityFrameworkCore;
 using PublisherData;
 using PublisherDomain;
-using System.Text;
 
 TestingFacade test = new();
 using var context = new PubContext();
+var author = context.Authors.Find(10);
+Console.WriteLine(context.Entry(author).DebugView.LongView);
 
-context.Add(new Author() {FirstName = "Tester"});
-context.SaveChanges();
+context.Entry(author).Collection(b => b.Books).Load();
+Console.WriteLine(context.Entry(author).DebugView.LongView);
 
+//var author = context.Authors.Find(1);
+//var authors = context.Authors.Include(a => a.Books).ToList();
+//test.AddAuthorWithBook();
 //test.GetAuthorsWithBooks();
 
 

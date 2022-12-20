@@ -12,7 +12,7 @@ using PublisherData;
 namespace PublisherData.Migrations
 {
     [DbContext(typeof(PubContext))]
-    [Migration("20221022143522_init")]
+    [Migration("20221023053418_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,11 +26,11 @@ namespace PublisherData.Migrations
 
             modelBuilder.Entity("PublisherDomain.Author", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("AuthorId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AuthorId"), 1L, 1);
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -40,9 +40,17 @@ namespace PublisherData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("AuthorId");
 
                     b.ToTable("Authors");
+
+                    b.HasData(
+                        new
+                        {
+                            AuthorId = 1,
+                            FirstName = "pierwszy",
+                            LastName = "ostatni"
+                        });
                 });
 
             modelBuilder.Entity("PublisherDomain.Book", b =>
